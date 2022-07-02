@@ -1,0 +1,402 @@
+main {
+    padding-top: 86px;
+}
+
+@media (max-width: 991px) {
+    main {
+        padding-top: 66px;
+    }
+}
+
+
+[class|='section'] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+@media (min-width: 575px) {
+    [class|='section'] {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.title-lined {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.title-lined::before {
+    content: "";
+    display: block;
+    border-top: solid 3px var(--text-color);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+}
+
+.title-lined span {
+    background: #fff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-featured {
+    background: url(../assets/knife-bg.jpg) no-repeat top;
+    position: relative;
+    background-size: cover;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .section-featured {
+        min-height: 550px;
+    }
+}
+
+.section-featured .container-sm {
+    max-width: 600px;
+}
+
+.section-featured h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-featured .form-search {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.section-featured .form-search .form-control {
+    background: #fff url(../assets/icons/icon-search.svg) no-repeat 15px 50%;
+    padding: 15px 15px 15px 50px;
+    border-radius: 5px;
+    border: 1px solid var(--accent-color);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem rgba(121, 186, 171, .5);
+    border: 1px solid var(--accent-color);
+}
+
+
+/* recipes and categories */
+
+.recipe,
+.category {
+    margin-bottom: 20px;
+}
+
+.recipe-img,
+.category-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.1s;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.recipe-img:hover,
+.category-img:hover {
+    transform: scale(1.03);
+}
+
+.recipe-title,
+.category-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.category-title {
+    text-align: center;
+}
+
+.section-latest-meals {
+    padding-top: 50px;
+}
+
+
+/* Newsletter */
+
+.section-newsletter {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    min-height: 283px;
+    background: var(--accent-color);
+}
+
+.section-newsletter::before {
+    content: '';
+    background: url(../assets/doodle.png) repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.section-newsletter .container {
+    max-width: 650px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-newsletter .newsletter-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.section-newsletter p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.section-newsletter form {
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-newsletter form input {
+    margin-right: 15px;
+    width: 300px;
+}
+
+
+/* Pic of the week */
+
+.section-pic-week {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.upper-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.section-pic-week .main-content {
+    padding-bottom: 30px;
+}
+
+.section-pic-week .main-content p {
+    margin-bottom: 25px;
+}
+
+@media (min-width: 1200px) {
+    .section-pic-week .main-content {
+        padding-right: 80px;
+        padding-top: 30px;
+    }
+}
+
+/* Shop section */
+
+.section-shop {
+    padding: 20px;
+    background: url(../assets/shop-bg.jpg) no-repeat;
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-shop .title-lined {
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+}
+
+.section-shop .shop-box {
+    max-width: 680px;
+    padding: 40px 60px;
+    background: #fff;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, .25);
+    text-align: center;
+}
+
+.section-shop .shop-box .cta-text a {
+    color: var(--contrast-color);
+    font-weight: 600;
+}
+
+.section-shop .shop-box .cta-text a:hover {
+    color: var(--contrast-light-color);
+    font-weight: 600;
+}
+
+.section-recipe-header {
+    background: url(../assets/knife-bg.jpg) no-repeat top;
+    position: relative;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0; 
+}
+
+.section-recipe-header .row {
+    padding: 80px 25px;
+}
+
+.section-recipe-header .img-thumbnail {
+    padding: 0.75rem;
+}
+
+.custom-badge {
+    border: 1px solid black;
+    font-weight: 300;
+    border-radius: 3px;
+  }
+
+  .ingredients-list {
+    list-style-type: disc !important;
+    padding-left: 1.3em !important;
+  }
+
+.section-ingredients {
+        background: var(--text-color);
+  }
+
+.title-lined-dark::before {
+    border-top: solid 3px #fff;
+}
+
+.title-lined-dark span {
+    color: #fff;
+    background: var(--text-color);
+}
+
+.section-instructions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions-box {
+	background: #F4F4F4;
+	padding: 40px 120px;
+  max-width: 1320px;
+  border: 3px solid var(--text-color);
+	text-align: center;
+	margin: 30px 60px;
+}
+
+.instructions-box li {
+  font-size: 18px;
+  text-align: left !important;
+  margin-bottom: 10px;
+}
+
+
+.section-newsletter .form-search {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.section-newsletter .form-search .form-control {
+    background: #fff url(../assets/icons/icon-search.svg) no-repeat 15px 50%;
+    padding: 15px 15px 15px 50px;
+    border-radius: 5px;
+    border: 1px solid var(--accent-color);
+}
+
+/* Estilos para los filtros y listas de recetas en Recipes */
+
+.section-recipes-main {
+    padding: 12px;
+    margin-bottom: 40px;
+}
+.section-recipes-main aside {
+    margin-bottom: 24px;
+}
+.section-recipes-header h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+.section-recipes-header p {
+    font-size: 17px;
+}
+.recipes-sidebar h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+}
+.recipes-sidebar p {
+    font-size: 18px;
+    margin-bottom: -2px;
+}
+.recipes-sidebar {
+    background-color: var(--text-color);
+    padding: 15px 20px;
+    color: #fff !important;
+}
+
+/* Estilos para el menú de búsqueda alfabética */
+
+.search-menu {
+    margin-top: 40px;
+    margin-left: -40px !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-menu li {
+    padding-left: 20px !important;
+  }
+
+  .search-menu li:not(:last-child)::after {
+    content: "";
+    position: relative;
+    top: -24px;
+    left: 24px;
+    display: inline-block;
+    border: 4px solid black;
+    border-radius: 4px; 
+    margin-right: 10px;
+  }
+
+  .search-menu li:last-child {
+    position: relative;
+    top: -12px;
+    left: 2px;
+  }
+
+  @media (max-width: 991px) {
+    .search-menu {
+      display: none;
+    }
+  }
+
+  .search-menu li a{
+    cursor: pointer;
+    font-weight: 600;
+    color: white !important;
+    text-decoration: underline !important;
+  }
